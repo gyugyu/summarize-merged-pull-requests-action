@@ -1,24 +1,37 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: Summarize Merged Pull Requests Action
+description: GitHub Action that summarizes merged pull requests
+author: gyugyu
 
-# Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: heart
-  color: red
+  icon: edit
+  color: orange
 
-# Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
-    required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: Your output description here
+  source_branch:
+    description: 'The source branch (e.g., main) whose merged PRs are included.'
+    default: 'main'
+    required: false
+  section_title:
+    description: 'Title for the section.'
+    default: 'This deploy will include the following PRs'
+    required: false
+  start_mark:
+    description: 'Start marker in PR body.'
+    default: '<!-- DEPLOY_DIFF_START -->'
+    required: false
+  end_mark:
+    description: 'End marker in PR body.'
+    default: '<!-- DEPLOY_DIFF_END -->'
+    required: false
+  dry_run:
+    description: 'If true, do not update the PR body. (true/false)'
+    default: 'false'
+    required: false
 
 runs:
-  using: node24
+  using: node20
   main: dist/index.js
+
+permissions:
+  contents: read
+  pull-requests: write

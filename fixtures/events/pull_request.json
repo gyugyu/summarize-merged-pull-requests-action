@@ -1,0 +1,18 @@
+{
+  "action": "synchronize",
+  "number": 124,
+  "pull_request": {
+    "number": 5,
+    "title": "Deploy to staging",
+    "body": "Existing body\n\n<!-- DEPLOY_DIFF_START -->\nold content\n<!-- DEPLOY_DIFF_END -->",
+    "base": { "ref": "e2e-staging" },
+    "head": { "ref": "main" },
+    "html_url": "https://github.com/gyugyu/summarize-merged-pull-requests-action/pull/5",
+    "user": { "login": "gyugyu" }
+  },
+  "repository": {
+    "full_name": "gyugyu/summarize-merged-pull-requests-action",
+    "name": "summarize-merged-pull-requests-action",
+    "owner": { "login": "gyugyu" }
+  }
+}
