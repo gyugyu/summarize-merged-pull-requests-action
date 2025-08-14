@@ -1,6 +1,6 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
+  "name": "summarize-merged-pull-requests-action",
+  "description": "GitHub Action that summarizes merged pull requests",
   "version": "0.0.0",
   "author": "",
   "type": "module",
