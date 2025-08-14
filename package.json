@@ -1,17 +1,17 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
+  "name": "summarize-merged-pull-requests-action",
+  "description": "GitHub Action that summarizes merged pull requests",
   "version": "0.0.0",
   "author": "",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
+  "homepage": "https://github.com/gyugyu/summarize-merged-pull-requests-action",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/gyugyu/summarize-merged-pull-requests-action.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/gyugyu/summarize-merged-pull-requests-action/issues"
   },
   "keywords": [
     "actions"
