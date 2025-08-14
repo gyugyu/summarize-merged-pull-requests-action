@@ -47,7 +47,7 @@ export async function run(): Promise<void> {
 
     const sourceBranch = core.getInput('source_branch') || 'main'
     const sectionTitle =
-      core.getInput('section_title') || 
+      core.getInput('section_title') ||
       'This deploy will include the following PRs'
     const START_MARK =
       core.getInput('start_mark') || '<!-- DEPLOY_DIFF_START -->'

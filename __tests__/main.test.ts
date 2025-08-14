@@ -15,7 +15,7 @@ jest.unstable_mockModule('@actions/github', () => github)
 
 // The module being tested should be imported dynamically. This ensures that the
 // mocks are used in place of any actual dependencies.
-//const { run } = await import('../src/main.js')
+const { run } = await import('../src/main.js')
 
 describe('main.ts', () => {
   beforeEach(() => {
@@ -24,5 +24,14 @@ describe('main.ts', () => {
 
   afterEach(() => {
     jest.resetAllMocks()
+  })
+
+  describe('run', () => {
+    it('should fail if no token is provided', async () => {
+      await run()
+      expect(core.setFailed).toHaveBeenCalledWith(
+        'GITHUB_TOKEN (or GH_TOKEN) is required via workflow `with: github-token` or env `secrets.GITHUB_TOKEN`.'
+      )
+    })
   })
 })
