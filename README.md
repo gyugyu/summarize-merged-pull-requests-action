@@ -26,10 +26,8 @@ production/test**.
 
   ### This deploy will include the following PRs
 
-  - #123 Add login form (@alice) — merged: 2025-01-10 12:00 UTC —
-    https://github.com/owner/repo/pull/123
-  - #124 Fix typo (@bob) — merged: 2025-01-12 09:30 UTC —
-  https://github.com/owner/repo/pull/124
+  - #123 Add login form (@alice) — https://github.com/owner/repo/pull/123
+  - #124 Fix typo (@bob) — https://github.com/owner/repo/pull/124
   <!-- DEPLOY_DIFF_END -->
   ```
 
