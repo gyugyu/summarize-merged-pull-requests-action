@@ -21,7 +21,7 @@ production/test**.
 - Detects PRs merged into `main` that are included in the diff `staging...main`.
 - Inserts or updates a section in the deploy PR body, between markers:
 
-  ```
+  ```markdown
   <!-- DEPLOY_DIFF_START -->
   ### This deploy will include the following PRs
 
@@ -116,7 +116,9 @@ You can test with act:
 }
 ```
 
+<!-- markdownlint-disable MD029 -->
 2. Run act with your PAT (must have `repo` scope):
+<!-- markdownlint-enable MD029 -->
 
 ```bash
 export ACT_TOKEN=ghp_xxx
